@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8 />
+        <title>Form validation: text field not empty </title>
+        <style>
+            div {margin-bottom: 10px;}
+        </style>
+    </head>
+    <body>
+        <form> 
+            <div>
+                <label>Please enter your user name:</label>
+                <input type="text" id="userNameField">
+            </div>
+            <div>
+                <label>Please enter your password:</label>
+                <input type="password" value="abc">
+            </div>
+            <div>
+                <label>Check if you want to keep signed in.</label>
+                <input type="checkbox" checked>
+            </div>
+            <p>Select an application for which you want to sign in?</p>
+            <div>
+                <input type="radio" value="OneDrive" name="choice" checked>
+                <label for="OneDrive">OneDrive</label>
+            </div>
+            <div>
+                <input type="radio" value="Teams" name="choice">
+                <label for="Teams">Teams</label>
+            </div>
+            <div>
+                <input type="radio" value="Outlook" name="choice">
+                <label for="Outlook">Outlook</label>
+            </div>
+            <div>
+                <label>Here you can upload a file to your cloud.</label>
+                <input type="file">
+            </div>
+            <div>
+                <input type="submit" value="Submit Form"><br>
+            </div> 
+        </form>
+    </body>
+</html>

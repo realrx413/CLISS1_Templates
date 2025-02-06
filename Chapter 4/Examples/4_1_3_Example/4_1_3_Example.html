@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Example 4.1.3 </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center;">
+    <h1>Manipulation of HTML elements</h1>
+    <div>
+        <caption>Put in your name</caption>
+        <input type="text" id="myText">
+        <button onclick="showBox()">Greet me!</button>
+    </div>
+    <script>
+        function showBox() {
+            let name = document.getElementById("myText").value;
+            alert("Hello " + name);
+        }
+    </script>
+</body>
+
+</html>

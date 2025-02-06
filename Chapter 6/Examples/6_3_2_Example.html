@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Mouse movement and clicking</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="positionText">The current position of the mouse [x,y]</p>
+        <p id="numberClicks">Number of clicks=0 </p>
+        <script>
+        let positionX=0;
+        let positionY=0;
+        let numberOfClicks=0;
+        document.addEventListener("mousemove", currentPosition);
+        document.addEventListener("mousedown", mouseClicked); 
+
+        //captures the current x and y coordinates of the mouse
+        function currentPosition(event)
+        {
+            positionX = event.clientX;
+            positionY = event.clientY;
+            let pPosition=document.getElementById("positionText");
+            pPosition.innerHTML="[x="+positionX+"px , y="+positionY+"px]";
+        }
+        //counts how many times the user has clicked
+        function mouseClicked()
+        {
+            numberOfClicks++;
+            let pClicks=document.getElementById("numberClicks");
+            pClicks.innerHTML="Number of clicks="+numberOfClicks;
+        }
+        </script>
+    </body>
+</html>
+
+

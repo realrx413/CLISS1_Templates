@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Example 4.1.1 </title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="text-align: center;">
+    <h2>Manipulation of HTML-Elements</h2>
+    <div>
+        <p id="demo" style="display: inline;"> Click the button to change the text.</p>
+    </div>
+    <div>
+        <button onclick="showBox()" >Click me!</button>
+    </div> 
+    <script>
+        function showBox() {
+            document.getElementById("demo").innerHTML = "Button clicked, this is the new text!";
+            document.getElementById("demo").style.border="solid red";
+        }
+    </script>
+</body>
+
+</html>

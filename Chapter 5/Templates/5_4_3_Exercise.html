@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>
+        Exercise 5.4.3 Supermarket
+    </title>
+    <meta charset="UTF-8">
+    <h1>Item Scanner</h1>
+    <p>Type in the input field an item to get to know the price of it. <br>
+        Here is a list of possibilities (SSD 1TB, HDD 2TB,Xbox one X 1TB, iPhone 12 64GB, HDMI cable)</p>
+    <input type="text" id="inputItem">
+    <button id="checkBtn">check</button><br>
+    <p id="outputText"></p>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        //adds an event listener to the button callingg the function check
+        document.getElementById("checkBtn").addEventListener("click", check);
+
+        //store item names in variables
+
+        //store item prices in variables
+
+
+        function check() {
+            //get the value out of the input field
+            let scannedItem=document.getElementById("inputItem").value;  
+            //check if the item exists and output the price of the item
+        }
+
+    </script>
+</body>
+
+</html>

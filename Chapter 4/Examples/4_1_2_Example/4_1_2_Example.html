@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Example 4.1.2 </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center;">
+    <h1>Manipulation of HTML elements</h1>
+    <div>
+        <img id="animalImage" src="Pictures/Bear.jpg" width="400" height="300">
+    </div>
+    <p>Click the button to change the image.</p>
+    <button onclick="showBox()">Click me!</button>
+    <script>
+        function showBox() {
+            document.getElementById("animalImage").src = "Pictures/Mountain_Goat.jpg";
+        }
+    </script>
+</body>
+
+</html>
